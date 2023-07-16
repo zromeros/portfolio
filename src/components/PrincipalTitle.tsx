@@ -1,10 +1,10 @@
 import { FC } from 'react'
+import { NAME } from '@assets/texts'
 
-const name = 'Zadkiel Romero'
 const PrincipalTitle: FC = () => {
   return (
     <div className="flex flex-col">
-      <p className="text-custom font-bold">{name}</p>
+      <p className="text-custom font-bold">{NAME}</p>
     </div>
   )
 }
