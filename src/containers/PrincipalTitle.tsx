@@ -1,12 +1,10 @@
 import { FC } from 'react'
 
+const name = 'Zadkiel Romero'
 const PrincipalTitle: FC = () => {
   return (
-    <div className="flex flex-row justify-center items-center text-title">
-      <p className="text-green-500">
-        {'Hi, I am'}
-        <span className="text-title">{' Zadkiel Romero'}</span>
-      </p>
+    <div className="flex flex-col">
+      <p className="text-custom font-bold">{name}</p>
     </div>
   )
 }

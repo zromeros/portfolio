@@ -6,11 +6,6 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
-  --b-dark: #122a34;
-  --b-semidark: #123f46;
-  --b-filldark: #125b60;
-  --b-semiemphasis: #148381;
-  --b-emphasis: #1ab9aa;
 }
 
 @media (prefers-color-scheme: dark) {

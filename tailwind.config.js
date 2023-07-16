@@ -13,8 +13,19 @@ module.exports = {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic': 'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
-      textSizes: {
-        title: '60px',
+      colors: {
+        dark: '#122a34',
+        semidark: '#123f46',
+        filldark: '#125b60',
+        semiemphasis: '#148381',
+        emphasis: '#1ab9aa',
+      },
+      fontSize: {
+        sm: '0.875rem',
+        base: '1rem',
+        lg: '1.125rem',
+        xl: '1.25rem',
+        custom: '4rem',
       },
     },
   },
