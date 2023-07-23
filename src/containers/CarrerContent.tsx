@@ -3,7 +3,7 @@ import { Segment, SegmentList, SegmentItem } from '@components/Segment'
 
 const CarrerContent: FC = () => {
   return (
-    <div className="mt-5 mb-20">
+    <div className="lg:mt-5 ml-2 mr-2">
       <Segment title="Experience">
         <SegmentList>
           <SegmentItem fromDate="Jan-2020" endDate="Jun-2022" jobTitle="Frontend Developer" company="Company">
