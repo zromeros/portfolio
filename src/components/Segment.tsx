@@ -8,9 +8,16 @@ const Segment: FC<SegmentProps> = ({ title, children }) => {
   return (
     <div>
       <h2 className="pb-4 pl-6 pt-2 text-xl font-bold">{title}</h2>
-      <div>{children}</div>
+      {children}
     </div>
   )
+}
+
+interface SegmentListProps {
+  children: ReactNode
+}
+const SegmentList: FC<SegmentListProps> = ({ children }) => {
+  return <div className="h-[70vh] overflow-auto">{children}</div>
 }
 
 interface SegmentItemProps {
@@ -22,7 +29,7 @@ interface SegmentItemProps {
 }
 const SegmentItem: FC<SegmentItemProps> = ({ fromDate, endDate, jobTitle, company, children }) => {
   return (
-    <div className="group flex justify-between items-start mt-4 mb-4 p-6 cursor-pointer rounded-lg border-t border-transparent hover:bg-primaryOpc hover:border-dark hover:text-emphasis">
+    <div className="group flex justify-between items-start p-6 cursor-pointer rounded-lg border-t border-transparent hover:bg-primaryOpc hover:border-dark hover:text-emphasis">
       <div className="w-1/3 font-bold text-emphasis text-sm mr-4 pt-1">
         {fromDate} - {endDate}
       </div>
@@ -34,4 +41,5 @@ const SegmentItem: FC<SegmentItemProps> = ({ fromDate, endDate, jobTitle, compan
     </div>
   )
 }
-export { Segment, SegmentItem }
+
+export { Segment, SegmentList, SegmentItem }
