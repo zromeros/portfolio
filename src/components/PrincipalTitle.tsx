@@ -3,8 +3,8 @@ import { NAME } from '@assets/texts'
 
 const PrincipalTitle: FC = () => {
   return (
-    <div className="flex flex-col pl-6 pr-6">
-      <p className="text-xxl md:text-custom font-bold">{NAME}</p>
+    <div className="flex flex-col p-2">
+      <p className="text-[2rem] md:text-[2.5rem] lg:text-[3rem] font-bold">{NAME}</p>
     </div>
   )
 }

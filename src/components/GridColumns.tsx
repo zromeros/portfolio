@@ -5,7 +5,7 @@ interface GridColumnsProps {
 }
 
 const GridColumns: FC<GridColumnsProps> = ({ children }) => {
-  return <div className={`grid grid-cols-1 lg:grid-cols-2 gap-4 h-screen pt-20`}>{children}</div>
+  return <div className={`grid grid-cols-1 gap-6 m-10`}>{children}</div>
 }
 
 export default GridColumns
