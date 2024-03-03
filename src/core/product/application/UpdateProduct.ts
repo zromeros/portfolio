@@ -1,10 +1,10 @@
 import { ProductEntity } from "../domain";
 import { ProductRepository } from "../domain";
 
-export class CreateProduct {
+export class UpdateProduct {
     constructor(private repository: ProductRepository) {}
 
-    public async create(product: ProductEntity): Promise<void> {
-        await this.repository.save(product);
+    public async updateAll(product: ProductEntity): Promise<void> {
+        await this.repository.update(product);
     }
 }
